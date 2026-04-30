@@ -1,0 +1,15 @@
+.experiences-container {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin: 0 auto;
+}
+  /* .experiences-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: min(100%, 1000px);
+    margin: 0 auto;
+  } */

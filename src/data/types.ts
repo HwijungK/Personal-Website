@@ -5,6 +5,7 @@ export type Experience = {
   startDate: string,
   endDate: string,
   description: string
+  imgSrc?: string
 }
 
 export type Introduction = {

@@ -1,4 +1,19 @@
+:root {
+  --accent-color: #2c5220;
+  --regular-color:#141216;
+  --shadow-color: rgba(51, 104, 21, 0.257);
+}
+h1, h3, h4, p {
+  color: var(--regular-color)
+}
+
 body {
+  margin: 20vw;
+  background-color: #dedbd5;
+}
+h2 {
+  color:var(--accent-color);
+}
+h4 {
   margin: 0;
-  background-color: #f3f0e4;
 }
