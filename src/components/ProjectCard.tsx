@@ -3,21 +3,21 @@ import './ProjectCard.css'
 
 export default function ProjectCard(project: Project) {
   return (
-    <article className="project-card-container">
-      <h3 className="project-card-name">{project.name}</h3>
-      <a
-        className="project-card-link"
-        href={project.link}
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label={`Open ${project.name}`}
-      >
-        <img className="project-card-img" src={project.imgSrc} alt={project.name} />
-      </a>
+    <a
+      className="project-card-container"
+      href={project.link}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label={`Open ${project.name}`}
+    >
+      <div className="project-card-year">[{project.year}]</div>
       <div className="project-card-details">
-        <span className="project-card-year">{project.year}</span>
+        <h3 className="project-card-name">{project.name}</h3>
         <p>{project.description}</p>
       </div>
-    </article>
+      <div className="project-card-link">
+        <img className="project-card-img" src={project.imgSrc} alt={project.name} />
+      </div>
+    </a>
   )
 }

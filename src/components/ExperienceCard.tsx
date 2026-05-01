@@ -3,9 +3,15 @@ import "./ExperienceCard.css"
 
 export default function ExperienceCard(experience: Experience) {
   return <>
-    <section className="section-card-container">
+    <a
+      className="section-card-container"
+      href={experience.link}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label={`Open ${experience.organization}`}
+    >
       <div className="section-card-date">
-        {experience.startDate}-{experience.endDate}
+        [{experience.startDate}-{experience.endDate}]
       </div>
       <div className="section-card-org">
         <h4>
@@ -15,6 +21,6 @@ export default function ExperienceCard(experience: Experience) {
         <p>{experience.description}</p>
       </div>
         <img className="section-card-img" src={experience.imgSrc} alt={experience.organization} />
-    </section>
+    </a>
   </>
 }

@@ -1,16 +1,21 @@
 .project-card-container {
   display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
-  padding: 1rem;
-  box-shadow: 0px 0px 10px rgb(188, 189, 178);
+  align-items: start;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1%;
+  box-shadow: var(--border-len) var(--border-len) 0px var(--accent-color);
   background-color: rgb(236, 236, 231);
   border-radius: 5px;
+  width: min(100%, 1900px);
+  height: auto;
   min-width: 0;
+  color: inherit;
+  text-decoration: none;
 }
 
 .project-card-container:hover {
-  box-shadow: 0px 0px 14px rgb(163, 164, 149);
+  box-shadow: var(--border-hover-len) var(--border-hover-len) 2px var(--accent-color);
 }
 
 .project-card-name {
@@ -21,12 +26,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  aspect-ratio: 4 / 3;
+  flex: 1;
+  min-width: 0;
 }
 
 .project-card-img {
-  width: 100%;
-  height: 100%;
+  height: clamp(100px, 20vh, 200px);
+  max-width: 100%;
   object-fit: contain;
 }
 
@@ -34,13 +40,36 @@
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
+  flex: 2;
+  min-width: 0;
 }
 
 .project-card-year {
+  flex: 1 0 100px;
   color: var(--accent-color);
-  font-weight: 700;
+  font-weight: 1000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.2rem;
 }
 
 .project-card-details p {
   margin: 0;
+}
+
+@media (max-width: 640px) {
+  .project-card-container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .project-card-year,
+  .project-card-details,
+  .project-card-link {
+    flex: none;
+    width: 100%;
+  }
+
+  .project-card-img {
+    width: 100%;
+  }
 }

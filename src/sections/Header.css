@@ -1,0 +1,84 @@
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--header-background-color);
+  height: 5rem;
+  padding: 0rem 5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.header-section-link-container {
+  display: flex;
+  gap: 2rem;
+  width: clamp(100px, 30vw, 300px);
+}
+.header-section-link {
+  font-weight: 700;
+  color: white;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+
+.header-contact-section {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2rem;
+}
+
+.header-contact-logo {
+  width: 30px;
+  height:auto;
+  object-fit: contain;
+}
+
+.header-contact-logo:hover {
+  animation: wobble 0.45s ease-in-out;
+}
+
+@keyframes wobble {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(8deg);
+  }
+
+  50% {
+    transform: rotate(-8deg);
+  }
+
+  75% {
+    transform: rotate(5deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@media (max-width: 520px) {
+  .site-header {
+    height: auto;
+    min-height: 5rem;
+    flex-wrap: wrap;
+    padding: 0rem 1rem;
+  }
+
+  .header-section-link-container,
+  .header-contact-section {
+    gap: 0.65rem;
+  }
+
+  .header-section-link {
+    font-size: 1rem;
+  }
+
+  .header-contact-logo {
+    width: 26px;
+  }
+}

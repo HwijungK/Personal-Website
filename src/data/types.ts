@@ -5,6 +5,7 @@ export type Experience = {
   startDate: string,
   endDate: string,
   description: string
+  link: string,
   imgSrc?: string
 }
 
@@ -20,6 +21,7 @@ export type Introduction = {
   title: string
   links: Link[]
   aboutMe: string
+  headShot: string
 }
 
 export type Link = {

@@ -9,6 +9,7 @@ export const experiences: Experience[] = [
     startDate: "Nov 2025",
     endDate: "Present",
     description: "Stuff",
+    link: "https://docs.icssc.club/docs/developer/anteaterapi",
     imgSrc: github_logo
   },
   {
@@ -18,6 +19,7 @@ export const experiences: Experience[] = [
     startDate: "Oct 2025",
     endDate: "Present",
     description: "Stuff",
+    link: "https://vgdc-uci.com/",
     imgSrc: github_logo,
   }
 ]

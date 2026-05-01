@@ -1,17 +1,38 @@
 :root {
-  --accent-color: #2c5220;
+  --accent-color: #178c8c;
   --regular-color:#141216;
-  --shadow-color: rgba(51, 104, 21, 0.257);
+  --shadow-color: rgba(21, 117, 117, 0.257);
   --background-color: #dedbd5;
+  --header-background-color: rgb(135, 151, 151);
+  --border-hover-len: 6px;
+  --border-len: 4px;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(
+    180deg,
+    var(--background-color) 0%,
+    #ecece7 45%,
+    #d8d5c8 100%
+  );
+  background-attachment: fixed;
 }
 h1, h3, h4, p {
   color: var(--regular-color)
 }
 
-body {
-  margin: 20vw;
-  background-color: var(--background-color);
+h2 {
+  font-size: 2em;
+  scroll-margin-top: 80px;
+  text-align: center;
 }
+
+#page-content {
+  margin: 10vw;
+}
+
 h2 {
   color:var(--accent-color);
 }
