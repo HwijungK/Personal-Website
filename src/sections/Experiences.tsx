@@ -1,4 +1,3 @@
-import React from 'react';
 import {experiences} from '../data/experiences'
 import ExperienceCard from '../components/ExperienceCard';
 import './Experiences.css'

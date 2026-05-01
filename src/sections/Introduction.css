@@ -3,7 +3,7 @@
   font-weight: 700;
   text-align: center;
   --shadow-align-x: 0ch;
-  --shadow-align-y: -1.3ch;
+  --shadow-align-y: -1.8ch;
 }
 
 .typing-name {
@@ -23,26 +23,31 @@
 }
 
 .title-accent-color {
-  color: var(--shadow-color);
   text-shadow: var(--shadow-align-x) 0px 0px var(--shadow-color);
-  animation: name-rise 1.1s .5s forwards;
+  animation: name-rise 2.5s 0s forwards;
 }
 
 @keyframes name-rise {
   0% {
+    color: var(--accent-color);
     text-shadow: 0ch 0ch 0ch var(--accent-color);
   }
-  60% {
-    text-shadow: 0ch calc(var(--shadow-align-y) * 1.1) 0px var(--accent-color);
+  30% {
+    color: var(--shadow-color);
+    text-shadow: 0ch 0ch 0ch var(--accent-color);
+  }
+  80% {
+    text-shadow: 0ch calc(var(--shadow-align-y)) 0px var(--accent-color);
   }
   100% {
+    color: var(--shadow-color);
     text-shadow: 0ch var(--shadow-align-y) 0px var(--accent-color);
   }
 }
 
 .title-shadow-only {
   color:transparent;
-  text-shadow: calc(var(--shadow-align-x) - 1ch) var(--shadow-align-y) 0px var(--accent-color);
+  text-shadow: calc(var(--shadow-align-x) - .95ch) var(--shadow-align-y) 0px var(--accent-color);
 }
 
 @keyframes typing {

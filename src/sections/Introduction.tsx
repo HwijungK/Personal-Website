@@ -1,4 +1,3 @@
-import React from 'react'
 import {intro} from '../data/intro'
 import './Introduction.css'
 

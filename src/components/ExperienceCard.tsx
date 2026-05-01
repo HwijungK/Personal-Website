@@ -1,4 +1,3 @@
-import React from 'react'
 import {type Experience} from '../data/types'
 import "./ExperienceCard.css"
 

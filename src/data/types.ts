@@ -8,6 +8,14 @@ export type Experience = {
   imgSrc?: string
 }
 
+export type Project = {
+  name: string,
+  imgSrc: string,
+  year: string,
+  description: string,
+  link: string,
+}
+
 export type Introduction = {
   title: string
   links: Link[]

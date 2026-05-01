@@ -2,6 +2,7 @@
   --accent-color: #2c5220;
   --regular-color:#141216;
   --shadow-color: rgba(51, 104, 21, 0.257);
+  --background-color: #dedbd5;
 }
 h1, h3, h4, p {
   color: var(--regular-color)
@@ -9,7 +10,7 @@ h1, h3, h4, p {
 
 body {
   margin: 20vw;
-  background-color: #dedbd5;
+  background-color: var(--background-color);
 }
 h2 {
   color:var(--accent-color);
