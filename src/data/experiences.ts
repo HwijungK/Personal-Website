@@ -1,5 +1,4 @@
 import {type Experience} from './types'
-import github_logo from "../assets/github_logo.png"
 import icssc_log from "../assets/icssc.svg";
 import vgdc_logo from "../assets/vgdc.jpg"
 

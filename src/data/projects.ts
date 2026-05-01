@@ -1,6 +1,4 @@
 import type {Project} from './types'
-import githubLogo from '../assets/github_logo.png'
-import itchLogo from '../assets/itch_logo.svg'
 import natural_selection from "../assets/natural_selection.png"
 import evac from "../assets/evac.png"
 import rune_trek from "../assets/rune_trek.png"
