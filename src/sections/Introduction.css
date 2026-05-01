@@ -9,7 +9,7 @@
 }
 .introduction #intro-heading {
   
-  font-size: 5.4rem;
+  font-size: 6.5rem;
   font-weight: 700;
   text-align: left;
   font-family: 'Courier New', Courier, monospace;
@@ -18,15 +18,15 @@
   margin-bottom: 10vh;
 }
 #arrow-1 {
-  animation: arrow-anim 3s 1.5s infinite;
+  animation: arrow-anim 3s 1.0s infinite;
   opacity: 0;
 }
 #arrow-2 {
-  animation: arrow-anim 3s 1.6s infinite;
+  animation: arrow-anim 3s 1.1s infinite;
   opacity: 0;
 }
 #arrow-3 {
-  animation: arrow-anim 3s 1.9s infinite;
+  animation: arrow-anim 3s 1.2s infinite;
   opacity: 0;
 }
 @keyframes arrow-anim {
@@ -47,7 +47,6 @@
   }
 }
 .typing-name {
-  width: 21ch;
   height: auto;
   padding-top: 1.5ch;
   margin-bottom: 0ch;
@@ -95,8 +94,19 @@
     width: 0;
   }
   to {
-    width: 19ch;
+    width: 14ch;
   }
+}
+
+@media(max-width: 600px) {
+  @keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 14ch;
+  }
+}
 }
 
 @keyframes blinking {
@@ -121,13 +131,13 @@
 
 .about-me-container {
   display: flex;
-  padding: 1%;
+  padding: 4ch;
   align-items:start;
   justify-content:space-between;
-  box-shadow: var(--border-len) var(--border-len) 1px var(--accent-color);
+  box-shadow: var(--border-len) var(--border-len) 1px var(--box-shadow-color);
   background-color: rgb(236, 236, 231);
   width: min(100%, 1900px);
-  gap: 1rem;
+  gap: 1dwhyrem;
   height: auto;
   border-radius: 5px;
   color: inherit;
@@ -141,6 +151,24 @@
   aspect-ratio: 1;
   border-radius: 50%;
   box-sizing: border-box;
-  box-shadow: 1px 1px 0px 5px var(--accent-color);
-  /* box-shadow: var(--border-len) var(--border-len) 1px var(--accent-color); */
+  box-shadow: 1px 1px 0px 5px var(--box-shadow-color);
+  /* box-shadow: var(--border-len) var(--border-len) 1px var(--box-shadow-color); */
+}
+
+@media(max-width: 840px) {
+  .about-me-container {
+    flex-direction: column-reverse;
+  }
+  .headshot {
+    align-self: center;
+    min-height: 350px;
+  }
+  .introduction #intro-heading {
+    font-size: 4rem;
+  }
+}
+@media(max-width: 640px) {
+  .introduction #intro-heading {
+    font-size: 3rem;
+  }
 }

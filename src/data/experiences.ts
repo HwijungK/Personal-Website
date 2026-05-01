@@ -1,25 +1,27 @@
 import {type Experience} from './types'
 import github_logo from "../assets/github_logo.png"
+import icssc_log from "../assets/icssc.svg";
+import vgdc_logo from "../assets/vgdc.jpg"
 
 export const experiences: Experience[] = [
   {
     position: "Projects Co-Lead",
-    organization: "ICSSC -- AnteaterAPI",
+    organization: "ICSSC == AnteaterAPI",
     location: "UC, Irvine",
     startDate: "Nov 2025",
     endDate: "Present",
-    description: "Stuff",
-    link: "https://docs.icssc.club/docs/developer/anteaterapi",
-    imgSrc: github_logo
+    description: "API providing university data to UCI students",
+    link: "https://anteaterapi.com/reference",
+    imgSrc: icssc_log
   },
   {
     position: "Game Developer",
-    organization: "VGDC -- AVA",
+    organization: "VGDC == AVA",
     location: "UC, Irvine",
     startDate: "Oct 2025",
     endDate: "Present",
-    description: "Stuff",
+    description: "Story driven RPG",
     link: "https://vgdc-uci.com/",
-    imgSrc: github_logo,
+    imgSrc: vgdc_logo,
   }
 ]

@@ -1,4 +1,4 @@
-import Introduction from './sections/Introduction'
+import {Title, AboutMe} from './sections/Introduction'
 import Experiences from './sections/Experiences'
 import Projects from './sections/Projects'
 import Header from './sections/Header'
@@ -7,11 +7,11 @@ import Header from './sections/Header'
 export function App() {
   return <>
     <Header></Header>
+    <Title />
     <div id="page-content">
-      <Introduction/>
+      <AboutMe />
       <Experiences />
       <Projects />
     </div>
-
   </>
 }

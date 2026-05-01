@@ -1,12 +1,14 @@
 :root {
-  --accent-color: #178c8c;
-  --regular-color:#141216;
-  --shadow-color: rgba(21, 117, 117, 0.257);
+  --accent-color: #8c4613;
+  --regular-color: #26252b;
+  --shadow-color: rgb(117 63 21 / 26%);
   --background-color: #dedbd5;
-  --header-background-color: rgb(135, 151, 151);
+  --header-background-color: rgb(144 117 105);
+  --box-shadow-color: var(--header-background-color);
   --border-hover-len: 6px;
   --border-len: 4px;
   scroll-behavior: smooth;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -22,6 +24,10 @@ body {
 h1, h3, h4, p {
   color: var(--regular-color)
 }
+p {
+  font-size: 1em;
+  color:#705946
+}
 
 h2 {
   font-size: 2em;
@@ -30,7 +36,7 @@ h2 {
 }
 
 #page-content {
-  margin: 10vw;
+  margin: 15vw;
 }
 
 h2 {

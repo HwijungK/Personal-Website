@@ -17,9 +17,31 @@
 }
 .header-section-link {
   font-weight: 700;
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 1.3rem;
+  position:relative;
   text-decoration: none;
+  transition:color 0.1 ease;
+}
+.header-section-link::after {
+  content: "";
+  position: absolute;
+  left: -10%;
+  width: 120%;
+  bottom: 0px;
+  height: 2px;
+
+  background: currentColor;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: transform .25s ease;
+}
+.header-section-link:hover::after {
+  transform: scaleX(1);
+  
+}
+.header-section-link:hover {
+  color: rgb(194, 175, 175);  
 }
 
 .header-contact-section {

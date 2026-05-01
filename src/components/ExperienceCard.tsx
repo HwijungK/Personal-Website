@@ -10,17 +10,19 @@ export default function ExperienceCard(experience: Experience) {
       rel="noopener noreferrer"
       aria-label={`Open ${experience.organization}`}
     >
-      <div className="section-card-date">
-        [{experience.startDate}-{experience.endDate}]
+      <div className="section-card-date-body-container">
+        <div className="section-card-date">
+          [{experience.startDate}-{experience.endDate}]
+        </div>
+        <div className="section-card-body">
+          <h4>
+            {experience.organization}
+          </h4>
+          <i>{experience.position}</i>
+          <p>{experience.description}</p>
+        </div>
       </div>
-      <div className="section-card-org">
-        <h4>
-          {experience.organization}
-        </h4>
-        <i>{experience.position}</i>
-        <p>{experience.description}</p>
-      </div>
-        <img className="section-card-img" src={experience.imgSrc} alt={experience.organization} />
+      <img className="section-card-img" src={experience.imgSrc} alt={experience.organization} />
     </a>
   </>
 }

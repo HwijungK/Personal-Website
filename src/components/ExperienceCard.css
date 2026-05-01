@@ -1,34 +1,70 @@
 .section-card-container {
   display: flex;
-  padding: 1%;
   align-items:start;
-  justify-content: center;
-  box-shadow: var(--border-len) var(--border-len) 0px var(--accent-color);
+  justify-content: space-between;
+  gap: 3rem;
+  padding: 4ch;
+  box-shadow: var(--border-len) var(--border-len) 0px var(--box-shadow-color);
   background-color: rgb(236, 236, 231);
-  width: min(100%, 1900px);
-  gap: 1rem;
-  height:auto;
   border-radius: 5px;
+  width: min(100%, 1900px);
+  height:auto;
+  min-width: 0;
   color: inherit;
   text-decoration: none;
 }
 
-.section-card-container:hover {
-    box-shadow: var(--border-hover-len) var(--border-hover-len) 2px var(--accent-color);
+.section-card-date-body-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex: 3
 }
 
-.section-card-container > .section-card-date {
+.section-card-container:hover {
+    box-shadow: var(--border-hover-len) var(--border-hover-len) 2px var(--box-shadow-color);
+}
+
+.section-card-date-body-container > .section-card-date {
   flex: 1 0 100px;
   color: var(--accent-color);
   font-weight: 1000;
   font-family: 'Courier New', Courier, monospace;
   font-size: 1.2rem;
 }
-.section-card-container > .section-card-org {
-  flex: 2
+.section-card-date-body-container > .section-card-body {
+  flex: 3
 }
 .section-card-container > .section-card-img {
   height: clamp(100px, 20vh, 200px);
+  max-width: 200px;
   flex: 1;
   object-fit:contain;
+}
+@media (max-width: 840px) {
+  .section-card-date-body-container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .section-card-body,
+  .section-card-img {
+    flex: none;
+    width: 100%;
+  }
+  .section-card-date {
+    flex: none;
+    max-height: 2rem;
+  }
+  .section-card-img {
+    height: clamp(100px, 20vh, 200px);
+    max-width: 200px;
+    align-self: center;
+  }
+}
+
+@media(max-width: 640px) {
+  .section-card-container {
+    flex-direction: column;
+  }
 }
