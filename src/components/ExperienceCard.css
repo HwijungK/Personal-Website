@@ -22,7 +22,9 @@
 }
 
 .section-card-container:hover {
-    box-shadow: var(--border-hover-len) var(--border-hover-len) 2px var(--box-shadow-color);
+    box-shadow: var(--border-hover-len) var(--border-hover-len) 10px var(--box-shadow-color);
+    background-color: rgb(245, 245, 242);
+
 }
 
 .section-card-date-body-container > .section-card-date {

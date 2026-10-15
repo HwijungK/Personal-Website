@@ -9,7 +9,8 @@ export const experiences: Experience[] = [
     location: "UC, Irvine",
     startDate: "Nov 2025",
     endDate: "Present",
-    description: "API providing university data to UCI students",
+    description: `Anteater API provides university data such as enrollment metrics, grade distributions, and degree requirements \
+      and is the backbone of UCI's most popular course planner, AntAlmanc`,
     link: "https://anteaterapi.com/reference",
     imgSrc: icssc_log
   },
@@ -18,7 +19,7 @@ export const experiences: Experience[] = [
     organization: "VGDC == AVA",
     location: "UC, Irvine",
     startDate: "Oct 2025",
-    endDate: "Present",
+    endDate: "Jun 20226",
     description: "Story driven RPG",
     link: "https://vgdc-uci.com/",
     imgSrc: vgdc_logo,

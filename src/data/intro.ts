@@ -23,11 +23,11 @@ export const intro: Introduction = {
       link: "https://gnlwnd1.itch.io/",
       imgSrc: itch_logo,
     },
-    {
-      name: "Resume",
-      link: "/Resume.pdf",
-      imgSrc: download_logo
-    }
+    // {
+    //   name: "Resume",
+    //   link: "/Resume.pdf",
+    //   imgSrc: download_logo
+    // }
   ],
   aboutMe: `
 I'm a student at the University of California, Irvine
