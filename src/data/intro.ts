@@ -2,7 +2,7 @@ import type {Introduction} from './types'
 import github_logo from '../assets/github_logo.png'
 import linkedin_logo from '../assets/linkedin_logo.webp'
 import itch_logo from '../assets/itch_logo.svg'
-import download_logo from '../assets/download.png'
+// import download_logo from '../assets/download.png'
 import headshot from '../assets/headshot.jpeg'
 
 export const intro: Introduction = {
@@ -30,12 +30,11 @@ export const intro: Introduction = {
     // }
   ],
   aboutMe: `
-I'm a student at the University of California, Irvine
+Hello there. I'm a CS major at UC Irvine!
 
-
-🐜 Majoring in Computer Science 🐜
-🗄️ Member of Anteater API 🗄️ 🎲 Make Games And Music on Itch.io! 🎲
-📚 Currently Working On: Simulations On Unity 📚
+What I do:
+- I co-lead Anteater API, an open source API that provides university data to thousands of students
+- I do undergraduate research
   `,
   headShot: headshot
 }

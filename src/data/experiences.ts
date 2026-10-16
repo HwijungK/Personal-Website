@@ -10,9 +10,20 @@ export const experiences: Experience[] = [
     startDate: "Nov 2025",
     endDate: "Present",
     description: `Anteater API provides university data such as enrollment metrics, grade distributions, and degree requirements \
-      and is the backbone of UCI's most popular course planner, AntAlmanc`,
+      and is the backbone of UCI's most popular course planner, AntAlmanc.`,
     link: "https://anteaterapi.com/reference",
     imgSrc: icssc_log
+  },
+  {
+    position: "Undergraduate Researcher",
+    organization: "Grace Lee Lab",
+    location: "UC, Irvine",
+    startDate: "Sep 2026",
+    endDate: "Present",
+    description: `
+    `,
+    link: "https://grylee.science/",
+    imgSrc: undefined
   },
   {
     position: "Game Developer",
