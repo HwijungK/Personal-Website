@@ -7,8 +7,11 @@ function AboutMe() {
       <h2 id="about">About Me</h2>
       <div className="about-me-container-container">
         <div className='about-me-container'>
-          <p style={{whiteSpace: "pre-line"}}>{intro.aboutMe}</p>
-          <img className='headshot' src={intro.headShot}></img>
+          <div className='about-me-top'>
+            <img className='headshot' src={intro.headShot}></img>
+            <p>{intro.aboutMe}</p>
+          </div>
+          <img className='drawing' src={intro.drawing}></img>
         </div>
       </div>
       
@@ -18,7 +21,14 @@ function AboutMe() {
 function Title() {
   return <>
    <section className="introduction">
-      <h1 id="intro-heading" className="typing-name">Hi <span className="title-accent-color">I'm</span> Hwi<span className="title-accent-color">jun</span>g<span className="title-shadow-only">e</span><span className="title-accent-color">Kim</span>&ensp;</h1>
+      <h1 id="intro-heading" className="typing-name">
+        Hi&ensp; 
+        <span className="title-accent-color">I'm</span>
+        &ensp;Hwi
+         <span className="title-accent-color">jun</span>
+         g
+         <span className="title-shadow-only">e</span>&ensp;
+      </h1>
       <svg id="arrow-1" width="10" height="10">
         <circle cx="5" cy="5" r="5" opacity="0.5" fill="#503c0a"/>
       </svg>

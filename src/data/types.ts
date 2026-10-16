@@ -22,6 +22,7 @@ export type Introduction = {
   links: Link[]
   aboutMe: string
   headShot: string
+  drawing: string
 }
 
 export type Link = {

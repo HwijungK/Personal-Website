@@ -4,6 +4,7 @@ import linkedin_logo from '../assets/linkedin_logo.webp'
 import itch_logo from '../assets/itch_logo.svg'
 // import download_logo from '../assets/download.png'
 import headshot from '../assets/headshot.jpeg'
+import abt_me_drawing from '../assets/abt_me_drawing.png'
 
 export const intro: Introduction = {
   title: "Hi I'm Hwijung",
@@ -33,8 +34,22 @@ export const intro: Introduction = {
 Hello there. I'm a CS major at UC Irvine!
 
 What I do:
-- I co-lead Anteater API, an open source API that provides university data to thousands of students
-- I do undergraduate research
+- I'm very involved in ICSSC, and I co-lead Anteater API, an open source API that provides university data to thousands of students
+- I do undergraduate research under Mark Xu in the Grace Lee Lab, where i use bioinformatics methods to analyze repetitive self-duplicating sequences in DNA called Transposable elements
+
+Some hobbies:
+- 
+- I'm very involved in ICSSC, and I co-lead Anteater API, an open source API that provides university data to thousands of students
+- I do undergraduate research under Mark Xu in the Grace Lee Lab, where i use bioinformatics methods to analyze repetitive self-duplicating sequences in DNA called Transposable elements
+
+Some hobbies:
+- 
+- I'm very involved in ICSSC, and I co-lead Anteater API, an open source API that provides university data to thousands of students
+- I do undergraduate research under Mark Xu in the Grace Lee Lab, where i use bioinformatics methods to analyze repetitive self-duplicating sequences in DNA called Transposable elements
+
+Some hobbies:
+- 
   `,
-  headShot: headshot
+  headShot: headshot,
+  drawing: abt_me_drawing
 }
