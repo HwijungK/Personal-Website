@@ -38,7 +38,6 @@ What I do:
 - I do undergraduate research under Mark Xu in the Grace Lee Lab, where i use bioinformatics methods to analyze repetitive self-duplicating sequences in DNA called Transposable elements
 
 Some hobbies:
-- 
 - I'm very involved in ICSSC, and I co-lead Anteater API, an open source API that provides university data to thousands of students
 - I do undergraduate research under Mark Xu in the Grace Lee Lab, where i use bioinformatics methods to analyze repetitive self-duplicating sequences in DNA called Transposable elements
 
@@ -48,7 +47,11 @@ Some hobbies:
 - I do undergraduate research under Mark Xu in the Grace Lee Lab, where i use bioinformatics methods to analyze repetitive self-duplicating sequences in DNA called Transposable elements
 
 Some hobbies:
-- 
+- I always try to find time to read fiction, and am proud to be one of the few people who borrow books from the Langson Library
+- When I can no longer bear to code, much of my time is spent cooking, working out, or taking aim-less walks
+- I enjoy drawing, and music composition, a relic of my game dev days
+
+Take a look at some of my professional experiences below!
   `,
   headShot: headshot,
   drawing: abt_me_drawing
