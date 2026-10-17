@@ -4,7 +4,7 @@ import linkedin_logo from '../assets/linkedin_logo.webp'
 import itch_logo from '../assets/itch_logo.svg'
 // import download_logo from '../assets/download.png'
 import headshot from '../assets/headshot.jpeg'
-import abt_me_drawing from '../assets/abt_me_drawing.png'
+import abt_me_drawing from '../assets/drawing.gif'
 
 export const intro: Introduction = {
   title: "Hi I'm Hwijung",
